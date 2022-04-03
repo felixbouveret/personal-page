@@ -15,7 +15,7 @@ import FooterLinks from "@/components/FooterLinks";
 <style lang="scss" scoped>
 .indexRoot {
   display: flex;
-  height: 100%;
+  min-height: 100vh;
   padding: 80px 20px;
 }
 .wrapper {
@@ -24,7 +24,7 @@ import FooterLinks from "@/components/FooterLinks";
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   padding: 40px 20px;
   border: solid 2px rgba(212, 212, 212, 0.8);
   background-color: white;

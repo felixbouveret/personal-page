@@ -6,7 +6,8 @@ import LeftArrow from "@/assets/left-arrow.svg";
 <template>
   <div class="container">
     <h1 class="title">
-      Hey there! 👋 I'm <span class="name">Felix Bouveret</span> and I'm a
+      Hey there! 👋 I'm
+      <span class="name">Felix Bouveret</span> and I'm a
       <span class="job-title">Front-End Developer.</span>
     </h1>
 
@@ -14,7 +15,10 @@ import LeftArrow from "@/assets/left-arrow.svg";
       I'm a front-end developer with a passion for building beautiful,
       performant, and accessible web applications.
     </p>
-    <Button class="button"> <span>Playground</span><LeftArrow /></Button>
+    <Button class="button">
+      <span>Playground</span>
+      <LeftArrow />
+    </Button>
   </div>
 </template>
 
@@ -38,7 +42,7 @@ import LeftArrow from "@/assets/left-arrow.svg";
 .job-title {
   font-weight: 600;
 
-  background: linear-gradient(45deg, #bf47fd, #002094);
+  background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -68,7 +72,7 @@ import LeftArrow from "@/assets/left-arrow.svg";
     transform: rotate(180deg) translateX(-4px);
   }
 
-  @media (max-width: 520px) {
+  @include above(small) {
     width: 100%;
   }
 }

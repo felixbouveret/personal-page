@@ -10,13 +10,8 @@ import HomeModule from "@/modules/index.vue";
 
 <style lang="scss" scoped>
 #root {
-  background-color: #f9f9f9;
-  color: #2c3e50;
+  background-color: $fake-white;
+  color: $fake-black;
   height: 100%;
-
-  &.darkMode {
-    background-color: #2c3e50;
-    color: #f9f9f9;
-  }
 }
 </style>

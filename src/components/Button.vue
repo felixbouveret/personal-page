@@ -19,23 +19,19 @@ const ctaType = computed(() => {
 </script>
 
 <template>
-  <component
-    class="button"
-    :class="{
-      buttonFluid: isFluid,
-    }"
-    :is="ctaType"
-  >
+  <component class="button" :class="{
+    buttonFluid: isFluid,
+  }" :is="ctaType">
     <slot />
   </component>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .button {
   display: flex;
   justify-content: center;
   padding: 12px 24px;
-  background: linear-gradient(45deg, #bf47fd, #002094);
+  background: $gradient;
   border-radius: 8px;
   border: 0;
   color: white;

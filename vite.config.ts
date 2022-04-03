@@ -11,4 +11,14 @@ export default defineConfig({
       "@": resolve(__dirname, "src"),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "@/styles/variables/colors.scss";
+          @import "@/styles/variables/mixins.scss";
+        `,
+      },
+    },
+  },
 });
