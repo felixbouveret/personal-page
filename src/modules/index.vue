@@ -25,7 +25,7 @@ import FooterLinks from "@/components/FooterLinks";
   justify-content: center;
   flex-direction: column;
   gap: 32px;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
   border: solid 2px rgba(212, 212, 212, 0.8);
   background-color: white;
   border-radius: 8px;

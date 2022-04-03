@@ -19,9 +19,15 @@ const ctaType = computed(() => {
 </script>
 
 <template>
-  <component class="button" :class="{
-    buttonFluid: isFluid,
-  }" :is="ctaType">
+  <component
+    class="button"
+    :class="{
+      buttonFluid: isFluid,
+    }"
+    :is="ctaType"
+    :href="href ?? null"
+    v-bind="$attrs"
+  >
     <slot />
   </component>
 </template>
@@ -38,6 +44,7 @@ const ctaType = computed(() => {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .buttonFluid {
