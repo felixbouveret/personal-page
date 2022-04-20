@@ -7,8 +7,8 @@ import LeftArrow from "@/assets/left-arrow.svg";
   <div class="container">
     <h1 class="title">
       Hey there! 👋 I'm
-      <span class="name">Felix Bouveret</span> and I'm a
-      <span class="job-title">Front-End Developer.</span>
+      <span class="name">Félix Bouveret</span> and I'm a
+      <span class="jobTitle">Front-End Developer.</span>
     </h1>
 
     <p class="description">
@@ -39,7 +39,7 @@ import LeftArrow from "@/assets/left-arrow.svg";
   white-space: pre;
 }
 .name,
-.job-title {
+.jobTitle {
   font-weight: 600;
 
   background: $gradient;
