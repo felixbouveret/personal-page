@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from "@/components/Button.vue";
+import CustomButton from "@/components/CustomButton.vue";
 import LeftArrow from "@/assets/left-arrow.svg";
 </script>
 
@@ -15,10 +15,10 @@ import LeftArrow from "@/assets/left-arrow.svg";
       I'm a front-end developer with a passion for building beautiful,
       performant, and accessible web applications.
     </p>
-    <Button class="button" href="https://playground.felixbouveret.com">
+    <CustomButton class="button" href="https://playground.felixbouveret.com">
       <span>Playground</span>
       <LeftArrow />
-    </Button>
+    </CustomButton>
   </div>
 </template>
 
