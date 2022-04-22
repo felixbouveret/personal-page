@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import Button from "@/components/Button.vue";
-import LeftArrow from "@/assets/left-arrow.svg";
-</script>
-
 <template>
   <div class="container">
     <h1 class="title">

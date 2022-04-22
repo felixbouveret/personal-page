@@ -24,12 +24,12 @@ const ctaType = computed(() => {
 
 <template>
   <component
+    :is="ctaType"
     class="button"
     :class="{
       buttonFluid: isFluid,
       small: small,
     }"
-    :is="ctaType"
     :href="href ?? null"
     v-bind="$attrs"
   >
