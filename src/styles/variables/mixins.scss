@@ -1,25 +1,42 @@
+@mixin typo-tag {
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 14px;
+}
 @mixin typo-body {
   font-weight: 500;
   line-height: 1.2em;
   font-size: 16px;
 }
 
-$screen-xsmall: '380px';
-$screen-small: '520px';
-$screen-medium: '980px';
-$screen-large: '1200px';
+@mixin typo-headline {
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 16px;
+}
+
+@mixin typo-title {
+  font-weight: 600;
+  line-height: 1em;
+  font-size: 24px;
+}
+
+$screen-xsmall: "380px";
+$screen-small: "520px";
+$screen-medium: "980px";
+$screen-large: "1200px";
 
 @mixin above($screen) {
-  @if $screen == 'xsmall' {
+  @if $screen == "xsmall" {
     $screen: $screen-xsmall;
   }
-  @if $screen == 'small' {
+  @if $screen == "small" {
     $screen: $screen-small;
   }
-  @if $screen == 'medium' {
+  @if $screen == "medium" {
     $screen: $screen-medium;
   }
-  @if $screen == 'large' {
+  @if $screen == "large" {
     $screen: $screen-large;
   }
 
@@ -29,16 +46,16 @@ $screen-large: '1200px';
 }
 
 @mixin below($screen) {
-  @if $screen == 'xsmall' {
+  @if $screen == "xsmall" {
     $screen: $screen-xsmall;
   }
-  @if $screen == 'small' {
+  @if $screen == "small" {
     $screen: $screen-small;
   }
-  @if $screen == 'medium' {
+  @if $screen == "medium" {
     $screen: $screen-medium;
   }
-  @if $screen == 'large' {
+  @if $screen == "large" {
     $screen: $screen-large;
   }
 

@@ -11,7 +11,7 @@ import HomeModule from "@/modules/index.vue";
 <style lang="scss" scoped>
 #root {
   background-color: $fake-white;
-  color: $fake-black;
+  color: $black-900;
   height: 100%;
 }
 </style>
