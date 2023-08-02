@@ -10,6 +10,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  small: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const ctaType = computed(() => {
@@ -24,6 +28,7 @@ const ctaType = computed(() => {
     class="button"
     :class="{
       buttonFluid: isFluid,
+      small: small,
     }"
     :href="href ?? null"
     v-bind="$attrs"
@@ -34,20 +39,23 @@ const ctaType = computed(() => {
 
 <style lang="scss" scoped>
 .button {
+  @include typo-body;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 12px 24px;
   background: $gradient;
   border-radius: 8px;
   border: 0;
   color: white;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
   text-decoration: none;
 }
 
 .buttonFluid {
   width: 100%;
+}
+.small {
+  @include typo-tag;
 }
 </style>
