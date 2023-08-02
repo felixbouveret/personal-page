@@ -9,6 +9,18 @@ import Twitter from "@/assets/twitter.svg";
     <h3 class="title">See more of my work on</h3>
     <ul class="links">
       <li>
+        <a
+          href="https://www.linkedin.com/in/f%C3%A9lix-bouveret-010005150/"
+          target="_blank"
+        >
+          <Linkedin />
+          <p>
+            Félix Bouveret <br />
+            Junior Front-End Engineer @Luko
+          </p>
+        </a>
+      </li>
+      <li>
         <a href="https://github.com/felixbouveret" target="_blank">
           <Github />
           <p>
@@ -20,15 +32,6 @@ import Twitter from "@/assets/twitter.svg";
         <a href="https://twitter.com/fefzdev" target="_blank">
           <Twitter />
           <p>@fefzdev - I'm on Twitter, sometimes sharing stuff about dev.</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/f%C3%A9lix-bouveret-010005150/">
-          <Linkedin />
-          <p>
-            Félix Bouveret <br />
-            Junior Front-End Engineer @Luko
-          </p>
         </a>
       </li>
     </ul>

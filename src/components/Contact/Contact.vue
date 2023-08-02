@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from "@/components/Button.vue";
+import CustomButton from "@/components/CustomButton.vue";
 </script>
 
 <template>
@@ -10,9 +10,9 @@ import Button from "@/components/Button.vue";
         Feel free to reach out for your next project, I'd be happy to help you!
       </p>
 
-      <Button class="button" small href="mailto:bouveret.felix@gmail.com">
+      <CustomButton class="button" small href="mailto:bouveret.felix@gmail.com">
         Contact me
-      </Button>
+      </CustomButton>
     </div>
     <p class="mail">bouveret.felix@gmail.com</p>
   </div>
