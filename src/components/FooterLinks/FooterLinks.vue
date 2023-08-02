@@ -5,36 +5,53 @@ import Twitter from "@/assets/twitter.svg";
 </script>
 
 <template>
-  <ul class="links">
-    <li>
-      <a href="https://github.com/felixbouveret" target="_blank">
-        <Github />
-        <p>
-          felixbouveret - 28 repositories available. Follow my code on GitHub.
-        </p>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/felixbouveret" target="_blank">
-        <Twitter />
-        <p>
-          @felixbouveret - I'm on Twitter, sometimes sharing stuff about dev.
-        </p>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/f%C3%A9lix-bouveret-010005150/">
-        <Linkedin />
-        <p>
-          Félix Bouveret <br />
-          Junior Front-End Engineer @Luko
-        </p>
-      </a>
-    </li>
-  </ul>
+  <div class="linksContainer">
+    <h3 class="title">See more of my work on</h3>
+    <ul class="links">
+      <li>
+        <a
+          href="https://www.linkedin.com/in/f%C3%A9lix-bouveret-010005150/"
+          target="_blank"
+        >
+          <Linkedin />
+          <p>
+            Félix Bouveret <br />
+            Junior Front-End Engineer @Luko
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/felixbouveret" target="_blank">
+          <Github />
+          <p>
+            felixbouveret - 28 repositories available. Follow my code on GitHub.
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/fefzdev" target="_blank">
+          <Twitter />
+          <p>@fefzdev - I'm on Twitter, sometimes sharing stuff about dev.</p>
+        </a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  @include typo-headline;
+  color: $black-400;
+  margin: 0;
+  text-align: left;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -57,7 +74,7 @@ import Twitter from "@/assets/twitter.svg";
     p {
       flex-shrink: 2;
       @include typo-body;
-      color: $fake-black;
+      color: $black-900;
     }
 
     &:before,
