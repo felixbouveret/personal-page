@@ -33,7 +33,6 @@ import Contact from "@/components/Contact";
   background-color: white;
   border-radius: 8px;
 }
-
 .divider {
   width: 100%;
   height: 2px;

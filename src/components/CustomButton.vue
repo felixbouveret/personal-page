@@ -55,7 +55,6 @@ const ctaType = computed(() => {
 .buttonFluid {
   width: 100%;
 }
-
 .small {
   @include typo-tag;
 }
